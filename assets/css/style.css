@@ -88,18 +88,20 @@ body {
 
 .new-form .br-dropdown {
   position: relative;
+  width: 150px;
 }
 
 .new-form .br-dropdown .brBtn {
+  text-align: center;
   cursor: pointer;
   font-size: 13px;
   border: 1px solid #01a65a;
   line-height: 30px;
-  padding: 0px 15px;
+  padding: 5px 15px;
   color: #01a65a;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 30px;
 }
 
@@ -119,13 +121,20 @@ body {
 }
 
 .new-form .br-dropdown ul a {
-  font-size: 12px;
+  font-size: 14px;
   display: block;
   color: #01a65a;
 }
 
 .new-form .br-dropdown ul.active {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .new-form .br-dropdown .brBtn {
+    padding: 0px 15px;
+    margin-top: 25px;
+  }
 }
 
 .bottom-navbar {
@@ -963,6 +972,71 @@ body {
   color: #01a65a;
 }
 
+.service {
+  padding: 90px 0px;
+  background: #ecfbec;
+}
+
+.service .main-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.service .title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.service .img-container {
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .service .main-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.globe-section {
+  padding: 90px 0px;
+}
+
+.globe-section .title {
+  padding-top: 90px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.globe-section .button-container {
+  margin-top: 30px;
+}
+
+.globe-section .button-container a {
+  padding: 10px 30px;
+  background: #01a65a;
+  border-radius: 30px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .globe-section {
+    padding: 30px 0px;
+  }
+  .globe-section .title {
+    padding-top: 30px;
+    font-size: 26px;
+  }
+  .globe-section .button-container {
+    margin-bottom: 30px;
+  }
+}
+
 .testimonial {
   padding: 60px 0px;
   background: #f7f7f7;
@@ -1016,7 +1090,7 @@ body {
 
 .inquiry {
   background: #01a65a;
-  padding: 30px 0px;
+  padding: 45px 0px;
   font-size: 18px;
   color: white;
 }
@@ -1034,6 +1108,24 @@ body {
   padding: 10px;
 }
 
+.inquiry .button-container {
+  margin-top: 15px;
+}
+
+.inquiry .button-container a {
+  padding: 8px 30px;
+  background: #01a65a;
+  border-radius: 30px;
+  text-decoration: none;
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+.inquiry .button-container a:hover {
+  background: yellow;
+  color: #01a65a;
+}
+
 @media (max-width: 768px) {
   .inquiry {
     font-size: 13px;
@@ -1045,6 +1137,9 @@ body {
   .inquiry .title {
     text-align: center;
     margin-bottom: 15px;
+  }
+  .inquiry .button-container {
+    text-align: center;
   }
 }
 
@@ -1180,7 +1275,8 @@ body {
   .footer .description {
     margin-bottom: 15px;
   }
-  .footer #important, .footer .contact-us {
+  .footer #important,
+  .footer .contact-us {
     padding-top: 10px;
   }
 }
@@ -2302,7 +2398,7 @@ body {
 
 .open-form .photo-upload .photo-text {
   padding: 0px 15px;
-  padding-top: 40%;
+  padding-top: 60px;
   font-weight: lighter;
   font-size: 14px;
   position: absolute;
@@ -2328,6 +2424,23 @@ body {
   padding: 15px;
 }
 
+.open-form .form-content p {
+  font-size: 20px;
+}
+
+.open-form .form-content .share-form-detail {
+  line-height: 40px;
+}
+
+.open-form .form-content .share-form-detail input {
+  border: none;
+  line-height: 28px;
+  background: #f6f6f6;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  border-bottom: 1px solid #a8a7a7;
+}
+
 .open-form .form-content .main-title {
   font-size: 26px;
   margin-top: 30px;
@@ -2340,7 +2453,7 @@ body {
   position: absolute;
   content: "";
   border-bottom: 1px solid gray;
-  left: 65%;
+  left: 70%;
   right: 0;
   top: 20px;
 }
@@ -2349,7 +2462,7 @@ body {
   position: absolute;
   content: "";
   border-bottom: 1px solid gray;
-  right: 65%;
+  right: 70%;
   left: 0;
   top: 20px;
 }
@@ -2402,7 +2515,13 @@ body {
   padding-right: 15px;
 }
 
-.open-form .form-content .form-flex .checkbox-wrap input[type=checkbox] {
+.open-form .form-content .form-flex .checkbox-wrap input[type="checkbox"] {
+  width: 50px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.open-form .form-content .form-flex .checkbox-wrap input[type="radio"] {
   width: 50px;
   display: inline-block;
   margin-top: 5px;
@@ -2414,7 +2533,7 @@ body {
           flex: 1;
 }
 
-.open-form .form-content .form-flex .checkbox-wrap input[type=text] {
+.open-form .form-content .form-flex .checkbox-wrap input[type="text"] {
   margin-left: 15px;
 }
 
@@ -2449,5 +2568,198 @@ body {
 
 .open-form .register-button .btn-color:hover {
   background: brown;
+}
+
+.open-form .table-focus thead tr th {
+  font-size: 14px;
+}
+
+.open-form .table-focus tbody td input:focus {
+  width: 200px;
+}
+
+.open-form .template-wrap {
+  background: #eaeaea;
+  padding: 15px;
+  margin: 15px -15px;
+  border-radius: 5px;
+}
+
+.open-form .selection-title {
+  text-align: center;
+}
+
+.open-form .selection {
+  margin: 60px auto 90px auto;
+}
+
+.open-form .selection .title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.open-form .selection .section-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.open-form .button-container {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.open-form .button-container a {
+  padding: 8px 25px;
+  text-decoration: none;
+  margin: 30px 15px;
+  border-radius: 5px;
+}
+
+.open-form .button-container a:first-child {
+  background: #01a65a;
+  color: white;
+}
+
+.open-form .button-container a:first-child:hover {
+  background: none;
+  border: 1px solid #01a65a;
+  color: #01a65a;
+}
+
+.open-form .button-container a:last-child {
+  background: none;
+  border: 1px solid #01a65a;
+  color: #01a65a;
+}
+
+.open-form .button-container a:last-child:hover {
+  background: #01a65a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .open-form .form-header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .open-form .form-header .logo-container {
+    display: none;
+  }
+  .open-form .form-header .header-items {
+    margin: 0 auto;
+  }
+  .open-form .form-header .header-items .university {
+    font-size: 26px;
+  }
+  .open-form .form-header .header-items .faculty {
+    font-size: 13px;
+  }
+  .open-form .form-header .header-items .application {
+    font-size: 20px;
+  }
+  .open-form .table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .open-form .form-content .main-title::before {
+    display: none;
+  }
+  .open-form .form-content .main-title::after {
+    display: none;
+  }
+  .open-form .form-content .form-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .open-form .form-content .form-control {
+    width: auto;
+  }
+  .open-form .photo-wrapper {
+    height: 140px;
+    width: 140px;
+  }
+  .open-form .photo-upload {
+    margin: 15px auto;
+  }
+  .open-form .photo-upload input {
+    width: 260px;
+    color: white;
+    background: #01a65a;
+  }
+  .open-form .photo-upload .photo-text {
+    width: 50%;
+    left: 26%;
+  }
+}
+
+.faq {
+  padding: 60px 0px;
+}
+
+.faq .main-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq .faq-content .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.faq .faq-content .active,
+.faq .faq-content .accordion:hover {
+  background-color: #ccc;
+}
+
+.faq .faq-content .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq .faq-content .accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq .faq-content .active:after {
+  content: "\2796";
+}
+
+#inquiryModal .main-title {
+  text-align: center;
+  color: #28a745;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#inquiryModal .button-container {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
